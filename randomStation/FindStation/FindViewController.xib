@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FindViewController" customModule="randomStation" customModuleProvider="target">
+            <connections>
+                <outlet property="selectTableView" destination="kKT-3g-sQf" id="nRn-34-afg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kKT-3g-sQf">
+                    <rect key="frame" x="0.0" y="130" width="375" height="537"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RwP-P2-mjK">
+                    <rect key="frame" x="75" y="80" width="225" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="RwP-P2-mjK" secondAttribute="height" multiplier="25:4" id="Fdd-7V-bUS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <state key="normal" title="この条件で駅を表示する"/>
+                    <connections>
+                        <action selector="tappedRandom:" destination="-1" eventType="touchUpInside" id="Cvf-pN-UV7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g35-5W-CK8">
+                    <rect key="frame" x="328" y="100" width="31" height="30"/>
+                    <state key="normal" title="全部"/>
+                    <connections>
+                        <action selector="selectedAll:" destination="-1" eventType="touchUpInside" id="8hB-MQ-Nxk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="g35-5W-CK8" secondAttribute="trailing" constant="16" id="6v3-rY-TAj"/>
+                <constraint firstItem="kKT-3g-sQf" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9QC-bt-xWl"/>
+                <constraint firstItem="RwP-P2-mjK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="AWz-4U-vd0"/>
+                <constraint firstItem="RwP-P2-mjK" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Byx-6p-3So"/>
+                <constraint firstItem="kKT-3g-sQf" firstAttribute="top" secondItem="RwP-P2-mjK" secondAttribute="bottom" constant="14" id="EaB-O6-m3w"/>
+                <constraint firstItem="kKT-3g-sQf" firstAttribute="top" secondItem="g35-5W-CK8" secondAttribute="bottom" id="Hdo-Ud-4lx"/>
+                <constraint firstItem="g35-5W-CK8" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="80" id="XWP-DI-yFN"/>
+                <constraint firstItem="kKT-3g-sQf" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="lJN-WK-dP1"/>
+                <constraint firstItem="kKT-3g-sQf" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oXI-h2-WZL"/>
+                <constraint firstItem="RwP-P2-mjK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="75" id="vMR-pN-8Mh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="140" y="154.27286356821591"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartViewController" customModule="randomStation" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hokkaido" translatesAutoresizingMaskIntoConstraints="NO" id="F1v-hH-e7U">
+                    <rect key="frame" x="0.0" y="253" width="375" height="326"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="F1v-hH-e7U" secondAttribute="height" multiplier="375:326" id="mWe-wL-bfz"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Zs-df-eoC">
+                    <rect key="frame" x="250" y="231" width="94" height="116"/>
+                    <color key="backgroundColor" red="0.40000000600000002" green="0.80000001190000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="DhB-ke-agI"/>
+                        <constraint firstAttribute="width" constant="94" id="fbM-9s-cDz"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="train1">
+                        <color key="titleShadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </state>
+                    <connections>
+                        <action selector="tapFind:" destination="-1" eventType="touchUpInside" id="4jw-tC-qzE"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title" translatesAutoresizingMaskIntoConstraints="NO" id="MXK-eC-FPy">
+                    <rect key="frame" x="24" y="70" width="327" height="132"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="327" id="ibb-gJ-YNr"/>
+                        <constraint firstAttribute="height" constant="132" id="lCc-Cy-bcx"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7y-08-ZbN">
+                    <rect key="frame" x="20" y="262" width="90" height="116"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="116" id="dO7-ft-LGT"/>
+                        <constraint firstAttribute="width" constant="90" id="tHb-4R-9Zj"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="map"/>
+                    <connections>
+                        <action selector="tapMap:" destination="-1" eventType="touchUpInside" id="5IA-uV-wuC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cJp-zh-s7y">
+                    <rect key="frame" x="86" y="514" width="93" height="123"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="93" id="YD6-ba-ENl"/>
+                        <constraint firstAttribute="height" constant="123" id="jsm-h9-dPq"/>
+                    </constraints>
+                    <state key="normal" title="Button" image="menu_favorite"/>
+                    <connections>
+                        <action selector="tapFavorite:" destination="-1" eventType="touchUpInside" id="s7F-gw-5dq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="q7y-08-ZbN" firstAttribute="top" secondItem="MXK-eC-FPy" secondAttribute="bottom" constant="60" id="3EC-yM-jkA"/>
+                <constraint firstItem="cJp-zh-s7y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="86" id="AN1-AO-5zT"/>
+                <constraint firstItem="MXK-eC-FPy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="CqU-HT-kxc"/>
+                <constraint firstItem="F1v-hH-e7U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RxJ-3i-LJj"/>
+                <constraint firstItem="8Zs-df-eoC" firstAttribute="top" secondItem="MXK-eC-FPy" secondAttribute="bottom" constant="29" id="Rzw-vE-Lhc"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="F1v-hH-e7U" secondAttribute="bottom" constant="88" id="Y85-AS-sex"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Zs-df-eoC" secondAttribute="trailing" constant="31" id="ZR0-ef-wWm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cJp-zh-s7y" secondAttribute="bottom" constant="30" id="fHX-eC-mUV"/>
+                <constraint firstItem="MXK-eC-FPy" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="ife-Xd-vUg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="MXK-eC-FPy" secondAttribute="trailing" constant="24" id="nje-Ws-Kvf"/>
+                <constraint firstItem="F1v-hH-e7U" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oDR-I4-jcL"/>
+                <constraint firstItem="q7y-08-ZbN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="xpj-ml-K1u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="100" y="48.125937031484263"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="hokkaido" width="256" height="256"/>
+        <image name="map" width="258" height="326"/>
+        <image name="menu_favorite" width="209" height="256"/>
+        <image name="title" width="751" height="307"/>
+        <image name="train1" width="258" height="318"/>
+    </resources>
+</document>
